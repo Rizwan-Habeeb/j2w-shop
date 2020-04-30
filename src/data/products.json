@@ -1,15 +1,14 @@
 [
     {
         "id": 10001,
-        "name": "Lenovo G50-80 Core i5 5th Gen - (8 GB/1 TB HDD/DOS/2 GB Graphics) G50-80 Laptop",
-        "price": 42000,
+        "name": "(Renewed) VOTO V9 (5.85', 3GB+32GB, Fingerprint, Notch Display) [Red]",
+        "price": 9999,
         "rating": 4,
         "features": [
-            "Intel Core i5 Processor (5th Gen)",
-            "8 GB DDR3 RAM",
-            "DOS Operating System",
-            "1 TB HDD",
-            "15.6 inch Display"
+            "Camera: 13+2 MP Sony Dual rear Bokeh cameras",
+            "8 MP front camera with Low light mode and LED flash",
+            "Display: 14.85 centimeters (5.85-inch) Full HD+ IPS display",
+            "Android v8.1 Oreo operating system with Media Tek 6739 1.5 GHz Processor"
         ],
         "images": [
             "../assets/images/10001/1.jpg",
@@ -17,5 +16,184 @@
             "../assets/images/10001/3.jpg"
         ],
         "discount": 10
+    },
+    {
+        "id": 10002,
+        "name": "Asus ZenFone Max M1 (Gold, 32 GB) (3 GB RAM)",
+        "price": 9599,
+        "rating": 3,
+        "features": [
+            "3 GB RAM | 32 GB ROM ",
+            "Expandable Upto 256 GB",
+            "13.84 cm(5.45 inch) HD+ Display 13MP Rear Camera",
+            "8MP Front Camera",
+            "4000 mAh Battery",
+            "Qualcomm Snapdragon 430 Processor"
+        ],
+        "images": [
+            "../assets/images/10002/1.jpg",
+            "../assets/images/10002/2.jpg",
+            "../assets/images/10002/3.jpg"
+        ],
+        "discount": 5
+    },
+    {
+        "id": 10003,
+        "name": "Nokia 5.1 Plus (Black, 32 GB) (3 GB RAM)",
+        "price": 13199,
+        "rating": 5,
+        "features": [
+            "Colour - Black",
+            "3 GB RAM",
+            "Internal memory: 32 GB",
+            "13 MP, f/2.0, PDAF",
+            "LED flash, HDR, panorama",
+            "Android 8.1 (Oreo), upgradable to Android 9.0 (Pie); Android One"
+        ],
+        "images": [
+            "../assets/images/10003/1.jpg",
+            "../assets/images/10003/2.jpg",
+            "../assets/images/10003/3.jpg"
+        ],
+        "discount": 10
+    },
+    {
+        "id": 10004,
+        "name": "Samsung Galaxy M10 (Ocean Blue , 3GB RAM, 32GB Storage)",
+        "price": 15199,
+        "rating": 3,
+        "features": [
+            "13MP+5MP ultra-wide angle dual camera.",
+            "15.8cm (6.22') HD+ Infinity V Display with 90% screen ratio.",
+            "3GB RAM and 32GB internal memory expandable up to 512GB in a dedicated slot",
+            "Fast face unlock",
+            "3400 mAh lithium-ion battery",
+            "1.6GHz Exynos 7870 octa-core processor"
+        ],
+        "images": [
+            "../assets/images/10004/1.jpg",
+            "../assets/images/10004/2.jpg",
+            "../assets/images/10004/3.jpg"
+        ],
+        "discount": 8
+    },
+    {
+        "id": 10005,
+        "name": "(Renewed) Realme 5i (Aqua Blue, 64 GB) (4 GB RAM)",
+        "price": 10999,
+        "rating": 4,
+        "features": [
+            "4 GB RAM | 64 GB ROM |.",
+            "16.56 cm (6.52 inch) HD+ Display.",
+            "12MP + 8MP + 2MP + 2MP | 8MP Front Camera",
+            "5000 mAh Battery"
+        ],
+        "images": [
+            "../assets/images/10005/1.jpg",
+            "../assets/images/10005/2.jpg",
+            "../assets/images/10005/3.jpg"
+        ],
+        "discount": 15
+    },
+    {
+        "id": 10006,
+        "name": "Samsung Galaxy M20 (Ocean Blue , 4GB RAM, 64GB Storage, 5000mAH Battery)",
+        "price": 20999,
+        "rating": 4,
+        "features": [
+            "13MP+5MP ultra-wide dual camera | 8MP f2.0 front camera.",
+            "16cm (6.3') Full HD+ Infinity V Display with 2340x1080 crystal clear resolution (409 PPI).",
+            "5000 mAh battery with 3x fast charge.",
+            "15W Type-C fast charger in the box.",
+            "4GB RAM and 64GB internal memory expandable up to 512GB in a dedicated slot.",
+            "1.8GHz Exynos 7904 octa-core processor"
+        ],
+        "images": [
+            "../assets/images/10006/1.jpg",
+            "../assets/images/10006/2.jpg",
+            "../assets/images/10006/3.jpg"
+        ],
+        "discount": 5
+    },
+    {
+        "id": 10007,
+        "name": "Xiaomi Redmi Note 7S Phone (32 GB, 3 GB RAM, Onyx Black)",
+        "price": 11999,
+        "rating": 4,
+        "features": [
+            "3 GB RAM.",
+            "32 GB ROM",
+            "Expandable Upto 256 GB.",
+            "16.0 cm (6.3 inch) FHD+ Display.",
+            "48MP + 5MP | 13MP Front Camera.",
+            "4000 mAh Battery.",
+            "Qualcomm Snapdragon 660 Processor."
+        ],
+        "images": [
+            "../assets/images/10007/1.jpg",
+            "../assets/images/10007/2.jpg",
+            "../assets/images/10007/3.jpg"
+        ],
+        "discount": 10
+    },
+    {
+        "id": 10008,
+        "name": "Realme X50 Pro (Rust Red, 8GB RAM, 128GB Storage)",
+        "price": 11999,
+        "rating": 4,
+        "features": [
+            "64MP + 12MP + 8MP + 2MP rear camera with Rear Wide 8MP + Rear Main 64MP + Rear Tele 12MP + Mono 2MP.",
+            "Dual SIM with dual standby (4G+4G)",
+            "128GB storage expandable up to 256GB.",
+            "Android 10 operating system with 2.8GHz Qualcomm Snapdragon 865 octa core processor.",
+            "Adreno 650 GPU.",
+            "4200mAH lithium-ion battery."
+        ],
+        "images": [
+            "../assets/images/10008/1.jpg",
+            "../assets/images/10008/2.jpg",
+            "../assets/images/10008/3.jpg"
+        ],
+        "discount": 25
+    },
+    {
+        "id": 10009,
+        "name": "Galaxy A51 sAMOLED FHD+ 6.5', Quad Camera (Pink)",
+        "price": 20000,
+        "rating": 5,
+        "features": [
+            "6.5'' Super AMOLED FHD+ Display.",
+            "2.3GHz, 1.7GHz Octa-Core Processor",
+            "Quad Camera 48.0 MP + 12.0 MP + 5.0 MP + 5.0 MP.",
+            "32MP Front Camera.",
+            "Adreno 650 GPU.",
+            "128GB | 6GB RAM."
+        ],
+        "images": [
+            "../assets/images/10009/1.jpg",
+            "../assets/images/10009/2.jpg",
+            "../assets/images/10009/3.jpg"
+        ],
+        "discount": 5
+    },
+    {
+        "id": 10010,
+        "name": "Realme 6 Pro (Lightening Blue, 128GB) (6 GB RAM)",
+        "price": 9999,
+        "rating": 4,
+        "features": [
+            "6 GB RAM | 128 GB ROM | Expandable Upto 256 GB.",
+            "16.76 cm (6.6 inch) Full HD+ Display | 90 Hz Ultra Smooth Display",
+            "64MP + 12MP + 8MP + 2MP | 16MP + 8MP Dual Front Camera.",
+            "4300 mAh Battery | 30 W Flash Charge.",
+            "Snapdragon 720G Processor.",
+            "Side Fingerprint Sensor."
+        ],
+        "images": [
+            "../assets/images/10010/1.jpg",
+            "../assets/images/10010/2.jpg",
+            "../assets/images/10010/3.jpg"
+        ],
+        "discount": 20
     }
 ]
