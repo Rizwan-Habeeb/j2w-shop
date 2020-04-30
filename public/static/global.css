@@ -6,6 +6,7 @@ body {
 #root {
     background-color: #F5F7FB;
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 .App{

@@ -1,7 +1,12 @@
 import React from 'react';
-import { Navbar, 
+import { 
+    Navbar, 
     NavbarBrand,
+    Nav,
+    Badge
 } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
+import { Ionicons } from 'react-web-vector-icons';
 
 import Colors from '../constants/colors';
 import styled from 'styled-components';
@@ -10,12 +15,31 @@ const Header = () => {
     return <div>
         <ColoredNavbar color={Colors.primary} dark expand="md">
             <NavbarBrand href="/">J2W Shopping site</NavbarBrand>
+            <Nav className="mr-auto" navbar></Nav>
+            <PaddedNavLink exact to="/cart">
+                <Ionicons name="ios-cart" size={24} color="#fff"/>
+                <CornerBadge color="dark">
+                    4
+                </CornerBadge>
+            </PaddedNavLink>
         </ColoredNavbar>
     </div>
 }
 
 const ColoredNavbar = styled(Navbar)`
-    background: ${Colors.bgColor}
+    background: ${Colors.header}
+`
+const CornerBadge = styled(Badge)`
+    position: absolute;
+    border-radius: 20px;
+    padding: 3px 6px;
+    padding-left: 5px;
+`
+const PaddedNavLink = styled(NavLink)`
+    padding: 0 20px;
+    &:hover{
+        text-decoration: none;
+    }
 `
 
 export default Header;

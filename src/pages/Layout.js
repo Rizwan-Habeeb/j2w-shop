@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BrowserRouter, Route, Switch} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Header from '../components/Header';
 import Home from './Home';
@@ -22,6 +22,7 @@ const Layout = () => {
 const Container = styled.div`
     display: flex;
     height: 100%;
+    background-color: #f1f3f6;
 `
 
 export default Layout;

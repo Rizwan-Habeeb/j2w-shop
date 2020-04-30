@@ -1,4 +1,4 @@
 export default {
-    header: "#f00",
-    bgColor: "#f00"
+    header: "#D92234",
+    bgColor: "#fff"
 }
