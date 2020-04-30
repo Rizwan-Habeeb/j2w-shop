@@ -1,0 +1,24 @@
+[
+    {
+        "id": 10001,
+        "name": "Lenovo G50-80 Core i5 5th Gen - (8 GB/1 TB HDD/DOS/2 GB Graphics) G50-80 Laptop",
+        "price": 42000,
+        "rating": 4,
+        "features": [
+            "Intel Core i5 Processor (5th Gen)",
+            "8 GB DDR3 RAM",
+            "DOS Operating System",
+            "1 TB HDD",
+            "15.6 inch Display"
+        ],
+        "images": [
+            "../assets/images/10001/1.jpg",
+            "../assets/images/10001/2.jpg",
+            "../assets/images/10001/3.jpg"
+        ],
+        "discount": 10
+    },
+    {
+        
+    }
+]
