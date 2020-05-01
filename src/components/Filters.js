@@ -2,13 +2,19 @@ import React from 'react';
 import { Nav } from 'reactstrap';
 import styled from 'styled-components';
 
-const Filters = () => {
+const Filters = (props) => {
+    const ratingMap = [0,0,0,0,0];
+    const discountMap = [0,0,0,0,0,0];
+    props.products.forEach(product => {
+        ratingMap[product.rating - 1]++;
+        discountMap[Math.floor(product.discount/10)]++;
+    });
+
     return <CustomSideNav vertical>
         <div className="main-title">
             Filters
         </div>
         <div className="filter-box">
-
             <div className="title">
                 Customer Reviews
             </div>
@@ -20,11 +26,14 @@ const Filters = () => {
                             "3★ & above",
                             "2★ & above",
                             "1★ & above",
-                        ].map((rating) => {
-                            return <li>
+                        ].map((item, i) => {
+                            return <li key={i}>
                                 <label>
-                                    <input type="checkbox"></input>
-                                    {rating}
+                                    <input 
+                                        onChange={(e) => {props.handleFilter('rating', ratingMap.length - i - 1, e.target.checked)}} 
+                                        type="checkbox" 
+                                        disabled={ratingMap[ratingMap.length - i - 2] > 0 ? false : true}/>
+                                    {item}
                                 </label>
                             </li>
                         })
@@ -45,13 +54,15 @@ const Filters = () => {
                             "40% or more",
                             "30% or more",
                             "20% or more",
-                            "10% or more",
-                            "10% and below"
-                        ].map((discount) => {
-                            return <li>
+                            "10% or more"
+                        ].map((item, i) => {
+                            return <li key={i}>
                                 <label>
-                                    <input type="checkbox"></input>
-                                    {discount}
+                                    <input 
+                                        onChange={(e) => {props.handleFilter('discount', discountMap.length - i - 1, e.target.checked)}} 
+                                        type="checkbox" 
+                                        disabled={discountMap[discountMap.length - i - 1] > 0 ? false : true}/>
+                                    {item}
                                 </label>
                             </li>
                         })

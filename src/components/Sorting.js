@@ -15,17 +15,17 @@ const Sorting = (props) => {
             <div>
                 <a 
                     href="#" 
-                    className={"sortBtn" + active == 0 ? " active":""} 
+                    className={"sortBtn" + active === 0 ? " active":""} 
                     onClick={(e) => {handleClick(0, e)}}>Popularity
                 </a>
                 <a 
                     href="#" 
-                    className={"sortBtn" + active == 1 ? " active":""} 
+                    className={"sortBtn" + active === 1 ? " active":""} 
                     onClick={(e) => {handleClick(1, e)}}>Price -- Low to High
                 </a>
                 <a 
                     href="#" 
-                    className={"sortBtn" + active == -1 ? " active":""} 
+                    className={"sortBtn" + active === -1 ? " active":""} 
                     onClick={(e) => {handleClick(-1, e)}}>Price -- High to Low
                 </a>
             </div>

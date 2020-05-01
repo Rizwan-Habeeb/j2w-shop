@@ -70,7 +70,7 @@ const Container = styled(Row)`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30px;
+        min-width: 30px;
         height: 30px;
         &:active{
             background-color: #eee;
