@@ -26,7 +26,7 @@ const ProductItem = (props) => {
     return <Container>
         <Col md={3} className="img-container">
             <div className="product-image">
-                <img alt="product image" src={product.images[selectedImg]}/>
+                <img alt="product thumbnail" src={product.images[selectedImg]}/>
             </div>
             <div className="thumbnails-container">
                 {

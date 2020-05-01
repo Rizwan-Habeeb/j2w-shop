@@ -12,6 +12,8 @@ import * as cartActions from '../store/actions/cart';
 const Home = () => {
     const dispatch = useDispatch();
     const [sortType, setSortType] = useState(0);
+    const [rating, setRating] = useState(0);
+    const [discount, setDiscount] = useState(0);
     const products = useSelector(state => state.product.products);
     let displayProducts = [];
 
@@ -24,9 +26,17 @@ const Home = () => {
         setSortType(type);
     }
 
+    const handleFilter = (type, val, checked) => {
+        if(type === 'rating'){
+            setRating(checked ? val : 0);
+        } else {
+            setDiscount(checked ? val : 0);
+        }
+    }
+
     useEffect(() => {
         dispatch(productActions.getProducts());
-    },[]);
+    },[dispatch]);
 
     switch(sortType){
         case 1:
@@ -40,8 +50,11 @@ const Home = () => {
             break;
     }
 
+    //Applying all Filters
+    displayProducts = displayProducts.filter(product => (product.rating >= rating && product.discount >= discount*10));
+
     return <Container>
-        <Filters/>
+        <Filters products={displayProducts} handleFilter={handleFilter}/>
         <ProductsContainer>
             <Sorting handleSort={handleSort}/>
             {

@@ -7,7 +7,7 @@ const Ratings = ({rating}) => {
         <div>
             {
                 [1,2,3,4,5].map(i => {
-                    return <Ionicons name="ios-star" size={15} color={i <= rating ? "#F2AA00":"#E1E1E1"}/>
+                    return <Ionicons key={i} name="ios-star" size={15} color={i <= rating ? "#F2AA00":"#E1E1E1"}/>
                 })
             }
         </div>

@@ -3,16 +3,14 @@ import {
     Row,
     Col
 } from 'reactstrap';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 import Colors from '../constants/colors';
 import styled from 'styled-components';
 import CartItem from '../components/CartItem';
-import * as cartActions from '../store/actions/cart';
 
 const Cart = () => {
-    const dispatch = useDispatch();
     const { products, totalCartValue } = useSelector(state => state.cart);
     const deliveryCharge = 0;
     return <Container>
@@ -23,7 +21,7 @@ const Cart = () => {
                         My Cart ({products.length})
                     </CartTitle>
                     {
-                        products.length == 0 &&
+                        products.length === 0 &&
                         <div className="d-flex justify-content-center p-5">Your Shopping Cart is empty</div>
                     }
                     <CartContent>
@@ -49,7 +47,7 @@ const Cart = () => {
                         <CartTitle>Price details</CartTitle>
                         <div className="price-row">
                             <div>
-                                Price ({products.length} {products.length == 1 ? "item":"items"})
+                                Price ({products.length} {products.length === 1 ? "item":"items"})
                             </div>
                             <div>
                                 ₹{totalCartValue.toLocaleString()}
